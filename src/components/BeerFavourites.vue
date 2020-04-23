@@ -3,8 +3,10 @@
     <h3>Favourites</h3>
     <ul>
       <li v-for="(beer, index) in favouriteBeers" :beer="beer" :key="index">
-        <button v-on:click="onClick(beer)">Delete {{beer.name}}</button>
         <img width="25px" :src="beer.image_url">
+        <br>
+        <button v-on:click="onClick(beer)">Delete {{beer.name}}</button>
+        <br>
       </li>
     </ul>
   </div>

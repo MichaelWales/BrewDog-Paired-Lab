@@ -1,8 +1,8 @@
 <template lang="html">
   <div>
-    <h3>{{beer.name}}</h3>
-    <button v-on:click="onClick" name="Add to Favourites">Add to Favourites</button>
+    <h3>{{beer.name}} <button v-on:click="onClick" name="Add to Favourites">Add to Favourites</button></h3>
     <img width="50px" :src="beer.image_url">
+    <br>
     <h4>Description:</h4>
     <p>{{beer.description}}</p>
     <br>
@@ -27,7 +27,7 @@ export default {
     showIngredients() {
       const ingredients = []
       return this.beer.ingredients.map(item => {
-        
+
       })
     }
   }
